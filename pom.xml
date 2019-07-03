@@ -69,6 +69,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>e-reservation</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -84,10 +85,9 @@
 							<name>smiith/${project.build.finalName}</name>
 							<build>
 								<from>openjdk:latest</from>
-								<entryPoint>java -Dspring.profiles.active=prod -jar
-									/C/Users/smiit/application/${project.build.finalName}.jar</entryPoint>
+								<entryPoint>java -Dspring.profiles.active=prod -jar /Users/smiith/application/${project.build.finalName}.jar</entryPoint>
 								<assembly>
-									<basedir>/C/Users/smiit/application/</basedir>
+									<basedir>/Users/smiith/application/</basedir>
 									<descriptorRef>artifact</descriptorRef>
 									<inline>
 										<id>assembly</id>
