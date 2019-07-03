@@ -23,8 +23,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfiguration {
 	public Docket documentation() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				//.apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
-				.apis(RequestHandlerSelectors.any())
+				.apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
+				//.apis(RequestHandlerSelectors.any())
 				.paths(PathSelectors.any())
 				.build();
 	}

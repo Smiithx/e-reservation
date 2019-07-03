@@ -21,6 +21,6 @@ public interface ReservationRepository extends JpaRepository<Reservation, String
 	/**
 	 * Method definition for search reservations
 	 * */
-	@Query("Select r from Reservation r where r.entryDate =:startDate and r.departureDate =:endDate  ")
-	public List<Reservation> find(@Param("startDate") Date startDate, @Param("departureDate") Date endDate);
+	@Query("Select r from Reservation r where r.entryDate =:startDate and r.departureDate =:endDate")
+	public List<Reservation> find(@Param("startDate") Date startDate, @Param("endDate") Date endDate);
 }
