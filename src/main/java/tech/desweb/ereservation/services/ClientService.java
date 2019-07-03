@@ -3,6 +3,8 @@
  */
 package tech.desweb.ereservation.services;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -64,5 +66,14 @@ public class ClientService {
 	 */
 	public Client findByIdentification(String identification) {
 		return this.clientRepository.findByIdentification(identification);
+	}
+	
+	/**
+	 * Method for search all clients
+	 * 
+	 * @return {@link List<Client> }
+	 */
+	public List<Client> findAll(){
+		return this.clientRepository.findAll(); 
 	}
 }
