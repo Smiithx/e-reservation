@@ -27,7 +27,7 @@ public class ClientService {
 	/**
 	 * Method to perform the operation of saving a client
 	 * 
-	 * @param Client client
+	 * @param ClientVO client
 	 * @return {@link Client}
 	 */
 	@Transactional
@@ -38,7 +38,7 @@ public class ClientService {
 	/**
 	 * Method to perform the operation of updating a client
 	 * 
-	 * @param Client client
+	 * @param ClientVO client
 	 * @return {@link Client}
 	 */
 	@Transactional
@@ -49,7 +49,7 @@ public class ClientService {
 	/**
 	 * Method to perform the operation of deleting a client
 	 * 
-	 * @param Client client
+	 * @param ClientVO client
 	 */
 	@Transactional
 	public void delete(Client client) {
